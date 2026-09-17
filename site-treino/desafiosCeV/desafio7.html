@@ -7,11 +7,14 @@
     <title>Desafio 7</title>
 </head>
 <body>
-    <h1>Desafio da imagem flexivel</h1>
+    <h1>Desafio da imagem dinamica</h1>
     <p>Esse eu nem sei como vou fazer, mas vamos lá</p>
     <hr>
-    <img src="imagens/desafio2/images.jpg" alt="Batman">
-
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/desafio2/images.jpg">
+        <source media="(max-width: 1050px )" srcset="imagens/desafio2/images.jpg">
+        <img src="imagens/desafio2/images.jpg" alt="Batman">
+    </picture>
     
 </body>
 </html>
